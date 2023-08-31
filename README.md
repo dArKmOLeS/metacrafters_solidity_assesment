@@ -17,12 +17,11 @@ The contract has a mint function that increases the total supply and the balance
 
 Parameters-
 -----------------------------------
-_address: The address to which the tokens will be minted.
-_value: The amount of tokens to be minted.
-Actions:
-Increase the totalSupply by _value.
-Increase the balance of the _address by _value.
-The contract has a burn function that decreases the total supply and the balance of the "sender" address by a given value:
+_address: The address where the tokens will be sent after they have been created.
+_value: The quantity of tokens that will be produced.
+Increase the totalSupply by the specified amount.
+The balance of the _address should be raised by _value.
+The contract has a burn function that subtracts a specified amount from both the balance at the "sender" address and the total supply:
 
 Parameters-
 ----------------------------------
@@ -35,11 +34,11 @@ Decrease the balance of the _address by _value.
 
 Usage-
 ----------------------------------
-Deploy the MyToken contract to a supported Ethereum network.
+Deploy the MyToken contract on an Ethereum network that is supported.
 
-Once deployed, you can interact with the contract by calling the following functions:
+When the contract is deployed, you can communicate with it by calling the following functions:
 
-mint: Creates new tokens and assigns them to a specified address.
+mint: Produces fresh tokens and sends them to a given address.
 
 I have used Remix, an online solidity IDE , https://remix.ethereum.org/
 
